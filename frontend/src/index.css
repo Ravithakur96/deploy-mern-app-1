@@ -1,0 +1,75 @@
+/* Reset */
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2; /* halka sa background */
+}
+
+.container {
+  background-color: #fff;
+  padding: 32px 48px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 24px rgba(66,68,90,0.5);
+}
+
+.container > h1{
+  margin-bottom: 20px;
+}
+
+.container input{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input styling */
+input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size:20px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.container input::placeholder{
+  font-size :12px;
+  font-style: italic;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
